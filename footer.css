@@ -1,0 +1,32 @@
+
+
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #050e1f;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-name {
+    font-size: 1.2rem;
+    margin-left: 5rem;
+}
+
+.footer-links {
+    margin-right: 2rem;
+}
+
+.footer-img {
+    height: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.footer-img:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}

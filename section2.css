@@ -1,0 +1,225 @@
+
+
+#section2-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 35vh;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 2.4rem;
+    color: white;
+    margin: auto;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.timeline-container {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.timeline {
+    width: 6px;
+    height: 1000px;
+    border-radius: 1000px;
+    margin: 0 1rem;
+    padding-top: 5rem;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background: linear-gradient(0deg, #833fe8 0%, #3c5fe9 100%);
+}
+
+.timeline-ball {
+    width: 35px;
+    height: 35px;
+    border-radius: 1000px;
+    /* background-color: #6b4ae3; */
+    background-color: transparent;
+    transform: translate(calc(-100% - 1rem), 200%);
+    padding: .1rem;
+}
+
+.timeline-ball img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    overflow: visible;
+}
+
+.ball-switch {
+    @media (min-aspect-ratio: 1/1) {
+        margin-left: auto;
+        transform: none;
+        transform: translate(calc(100% + 1rem), 200%);
+    }
+}
+
+.timeline-projects-container {
+    width: calc(100% - 1rem - 35px);
+    height: 100%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+
+.project {
+    width: 95%;
+    max-width: 420px;
+    height: auto;
+    margin: 0 1rem;
+    overflow: visible;
+    transform-origin: top left;
+    
+    /* Not in mobile */
+    /* @media (min-aspect-ratio: 1/1) {
+        margin-bottom: -30%;
+    } */
+}
+
+.project-switch {
+    /* Not in mobile */
+    @media (min-aspect-ratio: 1/1) {
+        transform-origin: top right;
+        margin-left: 0;
+        /* margin-top: -50%; */
+        translate: calc(-100% - 35px - 1rem);
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    border-radius: 17px;
+    /* background-color: rgba(84, 84, 84, 0.4); */
+    background-color: lightgray;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: -15px 15px 10px rgba(47, 47, 47, 0.2);
+
+    /* In mobile */
+    @media (min-aspect-ratio: 1/1) {
+        flex-direction: column;
+    }
+}
+
+.project-image {
+    width: 45%;
+    height: 100%;
+    /* background-color: yellow; */
+
+    /* In mobile */
+    /* @media (min-aspect-ratio: 1/1) { */
+    height: 30%;
+    width: 100%;
+}
+
+.project-image img {
+    width: calc(100% - .4rem);
+    height: auto;
+    display: block;
+    margin: .2rem;
+    border-radius: calc(17px - .2rem);
+
+    /* In mobile */
+    /* @media (min-aspect-ratio: 1/1) { */
+    width: calc(100% - .4rem);
+    height: auto;
+    /* } */
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    /* background-color: purple; */
+    padding-left: .3rem;
+
+    width: 100%;
+    height: auto;
+    padding-left: .5rem;
+}
+
+.project-title {
+    /* color: white; */
+    background: linear-gradient(100deg, #6549d5 0%, #3272e7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.3rem;
+    margin-top: .3rem;
+}
+
+.project-date {
+    font-size: .8rem;
+    color: gray;
+}
+
+.project-tags {
+    width: 100%;
+}
+
+.project-tag {
+    display: inline-block;
+    font-size: .8rem;
+    padding: 0 .5rem;
+    border-radius: 1000px;
+    color: white;
+    background: linear-gradient(100deg, #6549d5 0%, #3272e7 100%);
+}
+
+.project-skills {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: .4rem;
+    width: 100%;
+    height: 1.5rem;
+}
+
+.project-skills img {
+    height: 90%;
+    width: auto;
+    margin-right: .8rem;
+}
+
+.project-discription {
+    margin-top: .3rem;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    padding-right: .5rem;
+    color: gray;
+}
+
+.project-visit {
+    border-radius: 10px;
+    color: white;
+    padding: .3rem 1.4rem;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: .5rem;
+    background: linear-gradient(100deg, #6549d5 0%, #3272e7 100%);
+    cursor: pointer;
+}
+.project-visit:hover {
+    transform: scale(1.03); /* Slightly enlarge the button */
+}

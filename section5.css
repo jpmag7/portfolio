@@ -1,0 +1,95 @@
+
+
+#section5-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 25vh;
+    margin-top: 25vh;
+}
+
+
+.section5-image-window {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+    /* aspect-ratio: 1.5/1; */
+    height: auto;
+    border-radius: 17px;
+    border-right: none;
+    background-color: rgba(84, 84, 84, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transform: translate(50%, 10%);
+    transition: transform .8s ease;
+
+    @media (max-aspect-ratio: 1/1) {
+        width: 95%;
+        /* min-height: 80%; */
+    }
+}
+
+
+#section5-window-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    /* height: 7%; */
+    aspect-ratio: 25/1;
+    border-radius: 17px 17px 0 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: auto;
+}
+
+
+#section5-window-code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: min(3vw, 1rem);
+    padding-left: 8%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    width: 100%;
+    height: 93%;
+    word-break: break-all;
+    white-space: wrap;
+    color: lightgray;
+}
+
+.font-consolas {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: min(3vw, 1rem);
+    display: inline;
+}
+
+.font-orange {
+    color: rgb(255, 217, 0);
+}
+
+.font-blue {
+    color: #a2d8f5;
+}
+
+.font-brown {
+    color: #d28e7b;
+}
+
+.font-green {
+    color: #97c684;
+}
+
+.font-link {
+    color: #1154ff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.font-pink {
+    color: #d214a9;
+}

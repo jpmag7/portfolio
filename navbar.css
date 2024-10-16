@@ -1,0 +1,98 @@
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+#navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    
+    @media (max-aspect-ratio: 1/1) {
+        width: 100%;
+    }
+}
+
+#navbar-right img {
+    height: 2rem;
+    width: auto;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    object-fit: contain;
+    cursor: pointer;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#navbar-right img:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+
+.navbar-download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    margin-right: 0.9rem;
+    margin-top: .9rem;
+    box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.4);
+    
+    border-left: 5px solid #7746d3;
+    border-right: 5px solid #4f46d3;
+    border-top: 5px solid #6046d3;
+    border-bottom: 5px solid #6046d3;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for transform and box-shadow */
+    cursor: pointer;
+}
+.navbar-download-button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+
+.nav-item {
+    position: relative; /* Necessary for positioning the pseudo-element */
+    margin-left: 4rem;
+    margin-top: 1.8rem;
+    font-size: 1.2rem;
+    color: lightgray;
+    cursor: pointer;
+    padding-bottom: 5px; /* Add padding to create space for the line */
+}
+.nav-item::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position it relative to the parent */
+    left: 0; /* Center the line */
+    bottom: 0; /* Position it at the bottom */
+    width: 0; /* Start with zero width */
+    height: 2px; /* Set the height of the line */
+    background-color: white; /* Line color */
+    transition: width 0.3s ease, left 0.3s ease; /* Animate width and position */
+}
+.nav-item:hover::after {
+    width: 100%; /* Expand to full width */
+    left: 0; /* Adjust to align with the left side */
+}
+.nav-item:hover {
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
