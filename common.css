@@ -66,14 +66,14 @@
 
 .mobile-hide {
     /* In mobile */
-    @media (max-aspect-ratio: 1/1) {
+    @media (max-aspect-ratio: 1/1) or (orientation: portrait) {
         display: none;
     }
 }
 
 .mobile-show {
     /* Not in mobile */
-    @media (min-aspect-ratio: 1/1) {
+    @media (min-aspect-ratio: 1/1) or (orientation: landscape) {
         display: none;
     }
 }

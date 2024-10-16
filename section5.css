@@ -27,7 +27,7 @@
     transform: translate(50%, 10%);
     transition: transform .8s ease;
 
-    @media (max-aspect-ratio: 1/1) {
+    @media (max-aspect-ratio: 1/1) or (orientation: portrait) {
         width: 95%;
         /* min-height: 80%; */
     }

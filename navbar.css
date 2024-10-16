@@ -19,7 +19,7 @@
     align-items: center;
     width: 50%;
     
-    @media (max-aspect-ratio: 1/1) {
+    @media (max-aspect-ratio: 1/1) or (orientation: portrait) {
         width: 100%;
     }
 }
