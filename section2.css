@@ -62,7 +62,7 @@
 }
 
 .ball-switch {
-    @media (min-aspect-ratio: 1/1) or (orientation: landscape) {
+    @media (min-aspect-ratio: 1/1) or (orientation: landscape) or (min-width: 830px){
         margin-left: auto;
         transform: none;
         transform: translate(calc(100% + 1rem), 200%);
@@ -94,7 +94,7 @@
 
 .project-switch {
     /* Not in mobile */
-    @media (min-aspect-ratio: 1/1) or (orientation: landscape) {
+    @media (min-aspect-ratio: 1/1) or (orientation: landscape) or (min-width: 830px){
         transform-origin: top right;
         margin-left: 0;
         /* margin-top: -50%; */
@@ -116,7 +116,7 @@
     box-shadow: -15px 15px 10px rgba(47, 47, 47, 0.2);
 
     /* In mobile */
-    @media (min-aspect-ratio: 1/1) or (orientation: landscape) {
+    @media (min-aspect-ratio: 1/1) or (orientation: landscape) or (min-width: 830px){
         flex-direction: column;
     }
 }
