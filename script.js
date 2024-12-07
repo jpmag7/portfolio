@@ -154,7 +154,7 @@ contactsNavButton.addEventListener('click', function() {
 const redirectLinkedin = document.querySelectorAll('.linkedin-redirect');
 redirectLinkedin.forEach(element => {
     element.addEventListener('click', () => {
-        window.location.href = "https://www.linkedin.com/in/jos%C3%A9-pedro-magalh%C3%A3es-88837a256/";
+        window.location.href = "https://www.linkedin.com/in/jose-pedro-magalhaes-88837a256/";
     });
 });
 
